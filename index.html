@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentence Analyzer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: whitesmoke;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px black;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: blue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: lightblue;
+      }
+      .results {
+        margin-top: 20px;
+      }
+      .results p {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sentence Analyzer</h1>
+      <form id="sentenceForm">
+        <label for="sentenceInput"
+          >Enter a sentence (must end with a period):</label
+        >
+        <input
+          type="text"
+          id="sentenceInput"
+          placeholder="Type your sentence here..."
+          required
+        />
+        <button type="submit">Analyze</button>
+      </form>
+      <div class="results" id="results">
+        <!-- Results will be displayed here -->
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
